@@ -11,6 +11,7 @@ Source0:		%{name}-%{version}.tar.bz2
 BuildRequires:		automake >= 1.9
 BuildRequires:		intltool
 BuildArch:		noarch
+Obsoletes:		xfce-dev-tools
 BuildRoot:		%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
