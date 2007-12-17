@@ -11,7 +11,6 @@ BuildRequires:	intltool
 BuildArch:	noarch
 Obsoletes:	xfce-dev-tools
 Provides:	xfce-dev-tools
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This package contains common tools required by Xfce developers and people
