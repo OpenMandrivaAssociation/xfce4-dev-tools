@@ -8,6 +8,7 @@ URL:		http://www.xfce.org
 Source0:	%{name}-%{version}.tar.bz2
 BuildRequires:	automake >= 1.10
 BuildRequires:	intltool
+Requires:	intltool
 BuildArch:	noarch
 Obsoletes:	xfce-dev-tools
 Provides:	xfce-dev-tools
