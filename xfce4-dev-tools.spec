@@ -1,7 +1,7 @@
 Summary:	Xfce developer tools
 Name:		xfce4-dev-tools
-Version:	4.4.0.1
-Release:	%mkrel 5
+Version:	4.5.91
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		Development/Other
 URL:		http://www.xfce.org
@@ -10,7 +10,7 @@ BuildRequires:	automake >= 1.10
 BuildRequires:	intltool
 Requires:	intltool
 BuildArch:	noarch
-Obsoletes:	xfce-dev-tools
+Obsoletes:	xfce-dev-tools < 4.5.91
 Provides:	xfce-dev-tools
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
