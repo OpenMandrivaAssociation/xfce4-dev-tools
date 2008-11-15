@@ -5,7 +5,7 @@ Release:	%mkrel 1
 License:	GPLv2+
 Group:		Development/Other
 URL:		http://www.xfce.org
-Source0:	%{name}-%{version}.tar.bz2
+Source0:	http://www.xfce.org/archive/xfce-%{version}/src/%{name}-%{version}.tar.bz2
 BuildRequires:	automake >= 1.10
 BuildRequires:	intltool
 Requires:	intltool
