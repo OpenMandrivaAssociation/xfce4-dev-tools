@@ -1,11 +1,13 @@
+%define url_ver %(echo %{version} | cut -c 1-3)
+
 Summary:	Xfce developer tools
 Name:		xfce4-dev-tools
 Version:	4.7.2
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2+
 Group:		Development/Other
 URL:		http://www.xfce.org
-Source0:	http://www.xfce.org/archive/xfce-%{version}/src/%{name}-%{version}.tar.bz2
+Source0:	http://archive.xfce.org/src/xfce/xfce4-dev-tools/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:	automake >= 1.10
 BuildRequires:	intltool
 Requires:	intltool
