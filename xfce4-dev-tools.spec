@@ -3,7 +3,7 @@
 Summary:	Xfce developer tools
 Name:		xfce4-dev-tools
 Version:	4.7.2
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPLv2+
 Group:		Development/Other
 URL:		http://www.xfce.org
