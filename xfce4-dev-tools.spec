@@ -1,8 +1,8 @@
-%define url_ver %(echo %{version} | cut -c 1-3)
+%define url_ver %(echo %{version} | cut -c 1-4)
 
 Summary:	Xfce developer tools
 Name:		xfce4-dev-tools
-Version:	4.9.2
+Version:	4.10.0
 Release:	1
 License:	GPLv2+
 Group:		Development/Other
@@ -23,7 +23,7 @@ Xfce developer's handbook.
 %setup -q
 
 %build
-%configure2_5x 
+%configure2_5x
 %make
 
 %install
