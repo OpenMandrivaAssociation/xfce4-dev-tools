@@ -8,8 +8,9 @@ License:	GPLv2+
 Group:		Development/Other
 URL:		http://www.xfce.org
 Source0:	http://archive.xfce.org/src/xfce/xfce4-dev-tools/%{url_ver}/%{name}-%{version}.tar.bz2
-BuildRequires:	automake >= 1.10
+BuildRequires:	automake
 BuildRequires:	intltool
+BuildRequires:	pkgconfig(glib-2.0)
 Requires:	intltool
 Obsoletes:	xfce-dev-tools < 4.5.91
 Provides:	xfce-dev-tools
@@ -21,13 +22,14 @@ Xfce developer's handbook.
 
 %prep
 %setup -q
+%autopatch -p1
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc AUTHORS ChangeLog HACKING NEWS README
