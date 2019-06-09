@@ -11,14 +11,21 @@ Source0:	http://archive.xfce.org/src/xfce/xfce4-dev-tools/%{url_ver}/%{name}-%{v
 BuildRequires:	automake
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(glib-2.0)
+
 Requires:	intltool
-Obsoletes:	xfce-dev-tools < 4.5.91
 Provides:	xfce-dev-tools
 
 %description
 This package contains common tools required by Xfce developers and people
 that want to build Xfce from SVN. In addition, this package contains the
 Xfce developer's handbook.
+
+%files
+%doc AUTHORS ChangeLog HACKING NEWS README
+%{_bindir}/*
+%{_datadir}/xfce4/dev-tools
+
+#---------------------------------------------------------------------------
 
 %prep
 %setup -q
@@ -30,8 +37,3 @@ Xfce developer's handbook.
 
 %install
 %make_install
-
-%files
-%doc AUTHORS ChangeLog HACKING NEWS README
-%{_bindir}/*
-%{_datadir}/xfce4/dev-tools
