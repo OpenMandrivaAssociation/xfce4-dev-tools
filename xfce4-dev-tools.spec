@@ -3,11 +3,12 @@
 Summary:	Xfce developer tools
 Name:		xfce4-dev-tools
 Version:	4.12.0
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Development/Other
 URL:		http://www.xfce.org
 Source0:	http://archive.xfce.org/src/xfce/xfce4-dev-tools/%{url_ver}/%{name}-%{version}.tar.bz2
+Source1:	xfce.macros
 BuildRequires:	automake
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(glib-2.0)
@@ -24,6 +25,7 @@ Xfce developer's handbook.
 %doc AUTHORS ChangeLog HACKING NEWS README
 %{_bindir}/*
 %{_datadir}/xfce4/dev-tools
+%{_sys_macros_dir}/xfce4.macros
 
 #---------------------------------------------------------------------------
 
@@ -37,3 +39,7 @@ Xfce developer's handbook.
 
 %install
 %make_install
+
+# rpm helper macros
+install -dm 0755 %{buildroot}%{_sys_macros_dir}/
+install -pm 0644 %{SOURCE1} %{buildroot}%{_sys_macros_dir}/xfce4.macros
