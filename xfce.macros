@@ -1,0 +1,10 @@
+# rpm helper macros for Xfce .specs using xdt-autogen
+
+%_xdt_autogen_bin	%{_bindir}/xdt-autogen
+
+%xdt_autogen \
+mkdir -p m4 \
+ln -s %{_datadir}/xfce4/dev-tools/m4macros/*m4 m4/ \
+NOCONFIGURE=yes %_xdt_autogen_bin \
+%{nil}
+
