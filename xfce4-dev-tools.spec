@@ -3,7 +3,7 @@
 Summary:	Xfce developer tools
 Name:		xfce4-dev-tools
 Version:	4.12.0
-Release:	3
+Release:	4
 License:	GPLv2+
 Group:		Development/Other
 URL:		http://www.xfce.org
@@ -13,8 +13,10 @@ BuildRequires:	automake
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(glib-2.0)
 
-Requires:	intltool
 Provides:	xfce-dev-tools
+
+Requires:	intltool
+Requires:	gtk-doc
 
 %description
 This package contains common tools required by Xfce developers and people
