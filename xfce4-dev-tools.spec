@@ -2,7 +2,7 @@
 
 Summary:	Xfce developer tools
 Name:		xfce4-dev-tools
-Version:	4.14.0
+Version:	4.16.0
 Release:	1
 License:	GPLv2+
 Group:		Development/Other
@@ -24,10 +24,11 @@ that want to build Xfce from SVN. In addition, this package contains the
 Xfce developer's handbook.
 
 %files
-%doc AUTHORS ChangeLog HACKING NEWS README
+%doc AUTHORS ChangeLog HACKING NEWS README.md
 %{_bindir}/*
-%{_datadir}/xfce4/dev-tools
 %{_sys_macros_dir}/xfce4.macros
+%{_mandir}/man1/xdt-csource.1*
+%{_datadir}/aclocal/*.m4
 
 #---------------------------------------------------------------------------
 
