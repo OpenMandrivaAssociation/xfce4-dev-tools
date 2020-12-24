@@ -24,9 +24,9 @@ that want to build Xfce from SVN. In addition, this package contains the
 Xfce developer's handbook.
 
 %files
-%doc AUTHORS ChangeLog HACKING NEWS README
+%doc AUTHORS ChangeLog HACKING NEWS README.md
 %{_bindir}/*
-%{_datadir}/xfce4/dev-tools
+#{_datadir}/xfce4/dev-tools
 %{_sys_macros_dir}/xfce4.macros
 
 #---------------------------------------------------------------------------
