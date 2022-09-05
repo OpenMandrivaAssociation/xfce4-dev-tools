@@ -3,7 +3,7 @@
 Summary:	Xfce developer tools
 Name:		xfce4-dev-tools
 Version:	4.16.0
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Development/Other
 URL:		http://www.xfce.org
@@ -12,9 +12,7 @@ Source1:	xfce.macros
 BuildRequires:	automake
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(glib-2.0)
-
 Provides:	xfce-dev-tools
-
 Requires:	intltool
 Requires:	gtk-doc
 
@@ -27,14 +25,13 @@ Xfce developer's handbook.
 %doc AUTHORS ChangeLog HACKING NEWS README.md
 %{_bindir}/*
 %{_sys_macros_dir}/xfce4.macros
-%{_mandir}/man1/xdt-csource.1*
 %{_datadir}/aclocal/*.m4
+%doc %{_mandir}/man1/xdt-csource.1*
 
 #---------------------------------------------------------------------------
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 
 %build
 %configure
