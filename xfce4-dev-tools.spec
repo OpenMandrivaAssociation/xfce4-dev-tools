@@ -11,6 +11,7 @@ Source0:	http://archive.xfce.org/src/xfce/xfce4-dev-tools/%{url_ver}/%{name}-%{v
 Source1:	xfce.macros
 BuildRequires:	automake
 BuildRequires:	intltool
+BuildRequires:  xsltproc
 BuildRequires:	pkgconfig(glib-2.0)
 Provides:	xfce-dev-tools
 Requires:	intltool
