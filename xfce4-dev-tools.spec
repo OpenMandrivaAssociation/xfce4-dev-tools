@@ -3,11 +3,11 @@
 Summary:	Xfce developer tools
 Name:		xfce4-dev-tools
 Version:	4.18.1
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Development/Other
-URL:		http://www.xfce.org
-Source0:	http://archive.xfce.org/src/xfce/xfce4-dev-tools/%{url_ver}/%{name}-%{version}.tar.bz2
+URL:		https://www.xfce.org
+Source0:	https://archive.xfce.org/src/xfce/xfce4-dev-tools/%{url_ver}/%{name}-%{version}.tar.bz2
 Source1:	xfce.macros
 BuildRequires:	automake
 BuildRequires:	intltool
