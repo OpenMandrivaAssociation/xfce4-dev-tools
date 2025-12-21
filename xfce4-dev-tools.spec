@@ -9,6 +9,9 @@ Group:		Development/Other
 URL:		https://www.xfce.org
 Source0:	https://archive.xfce.org/src/xfce/xfce4-dev-tools/%{url_ver}/%{name}-%{version}.tar.bz2
 Source1:	xfce.macros
+BuildRequires:	autoconf
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:	automake
 BuildRequires:	intltool
 BuildRequires:  xsltproc
